@@ -24,3 +24,6 @@ RUN echo '*.swp' > ~/.gitignore_global
 RUN git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 RUN sh ~/.vim_runtime/install_awesome_vimrc.sh
 RUN vim +PluginInstall +qall
+
+# Web frontend development
+RUN apt-get install -y npm yarn
